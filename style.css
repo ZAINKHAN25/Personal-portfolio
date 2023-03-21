@@ -37,6 +37,8 @@
 }
 
 .mainwork{
+    padding-top: 1vh;
+    padding-right: 1vw;
     background-color: #252b2b;
     width: 80vw;
     height: 80vh;
@@ -46,8 +48,12 @@
     border-top-right-radius: 1.5vw;
     border-top-left-radius: 1.5vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    color: rgb(0, 255, 255);
     align-items: center;
+    /* justify-content: left; */
+    /* float: right; */
+    padding-left: 50vw;
     box-shadow: .5vw 1.5vh 1.5vw rgba(0, 0, 0, 30%);
 }
 
@@ -63,8 +69,12 @@
 
 .mainpic{
     width: 40vw;
-    margin-right: 50vw;
+    margin-right: 0vw;
     height: 75vh;
+    position: absolute;
+    left: 0vw;
+    top: 0vh;
+    /* z-index: -1; */
 }
 
 #about-workingarea{
@@ -84,4 +94,13 @@
 }
 #contact-workingarea{
     display: none;
+}
+
+hone{
+    font-size: 2vw;
+    font-weight: 600; 
+}
+
+span{
+    color : rgb(255, 255, 255);
 }
