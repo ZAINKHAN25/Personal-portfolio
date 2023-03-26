@@ -54,9 +54,6 @@ body{
     display: flex;
     flex-direction: column;
     color: rgb(0, 0, 0);
-    align-items: center;
-    /* justify-content: left; */
-    /* float: right; */
     padding-left: 50vw;
     box-shadow: .5vw 1.5vh 1.5vw rgba(255, 255, 255, 0.3);
 }
