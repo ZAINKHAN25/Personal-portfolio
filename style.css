@@ -15,7 +15,7 @@ body{
 }
 
 #header{
-    height: 80vh;
+    height: 90vh;
     width: 100vw;
     background-image: linear-gradient(to right, #766eff, #87f1ff);
     display: flex;
