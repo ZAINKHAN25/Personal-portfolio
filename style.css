@@ -25,6 +25,10 @@ body{
     padding: 4vw;
 }
 
+.none{
+    display: none;
+}
+
 #logo{
     font-size: 3vw;
     color: white;
