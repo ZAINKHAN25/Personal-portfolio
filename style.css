@@ -87,24 +87,6 @@ body{
     margin-top: 5vh;
 }
 
-#about-workingarea{
-    display: none;
-}
-#services-workingarea{
-    display: none;
-}
-#services-workingarea{
-    display: none;
-}
-#pages-workingarea{
-    display: none;
-}
-#blogs-workingarea{
-    display: none;
-}
-#contact-workingarea{
-    display: none;
-}
 
 hone{
     font-size: 2vw;
@@ -139,7 +121,8 @@ span{
     padding: 2vh 2vw;
     position: absolute;
     transition: .5s ease-in-out;
-    z-index: 2;
+    z-index: 3;
+    box-shadow: .3vw .5vh 3vw black;
 }
 
 .x{
@@ -198,4 +181,25 @@ span{
 .openClose{
     transform: translateX(-50vw);
     transition: 1s ease-in-out;
+}
+
+.workingarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 90vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    margin-left: 10vw;
+    border-top-right-radius: 2vw;
+    border-top-left-radius: 2vw;
+    padding: 1vw 2vh;
+}
+
+.workingarea img{
+    z-index: 2;
+    width: 30vw;
+    height: 80vh;
 }
