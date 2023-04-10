@@ -22,7 +22,7 @@ body{
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
-    padding: 4vw;
+    /* padding: 4vw; */
 }
 
 .none{
@@ -113,4 +113,89 @@ hone{
 
 span{
     color : rgb(0, 0, 0);
+    font-size: 5vw;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.barimg{
+    float: right;
+    color: lightblue;
+    transition: 1s ease-in-out;
+    margin: 3vw 3vh;
+}
+
+.barimg:hover{
+    color: rgb(0, 103, 141);
+}
+
+.sidebar{
+    width: 30vw;
+    height: 100vh;
+    background-color: white;
+    padding: 2vh 2vw;
+    position: absolute;
+    transition: .5s ease-in-out;
+    z-index: 2;
+}
+
+.x{
+    float: right;
+    color: red;
+    font-weight: bolder;
+    transform: rotate(0deg);
+    transition: .6s ease-in-out;
+}
+
+.x:hover{
+    transform: rotate(180deg);
+}
+
+.companyname{
+    font-size: 1.8vw;
+    font-weight: 600;
+    margin-bottom: 3vh;
+    font-size: 3vw;
+}
+
+.hover{
+    color: lightslategray;
+    font-size: 2.5vw;
+    font-weight: 200;
+    margin-bottom: 3vh;
+    padding: 2vh 2vh;
+    transition: all .5s ease-in-out 0s;
+}
+
+.hover:hover{
+    background-color: rgb(0, 103, 141);
+    color: lightblue;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 4vh;
+    width: 25vw;
+    height: max-content;
+    overflow-x: hidden;
+    font-size: 1vw;
+}
+
+.hover-2{
+    color: rgb(0, 103, 141);
+    transition: .5s ease-in-out 0s;
+    margin: 0 .5vw;
+    text-align: center;
+}
+
+.hover-2:hover{
+    color: rgb(0, 0, 0);
+}
+
+.openClose{
+    transform: translateX(-50vw);
+    transition: 1s ease-in-out;
 }
