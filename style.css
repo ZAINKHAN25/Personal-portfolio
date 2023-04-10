@@ -203,3 +203,12 @@ span{
     width: 30vw;
     height: 80vh;
 }
+
+#flex-direction-column{
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+}
+.wacst{
+    position: relative;
+}
