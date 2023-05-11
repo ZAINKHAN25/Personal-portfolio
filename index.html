@@ -1,103 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- style sheet link -->
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("IMG_20230422_085622_456.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  opacity: .3;
+  color: rgb(255, 0, 0);
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
 </head>
 <body>
-    <div id="body">
-        <!-- <div id="header">
-            <div id="logo">
-                ZAIN_KHAN_25
-            </div>
-            <div id="otherheaderobjects">
-                <span class="headerswords active" id="HOME"><input type="button" value="HOME"> </span>
-                <span class="headerswords passive" id="ABOUT"><input type="button" value="ABOUT"> </span>
-                <span class="headerswords passive" id="SERVICES"><input type="button" value="SERVICES"> </span>
-                <span class="headerswords passive" id="PAGES"><input type="button" value="PAGES"> </span>
-                <span class="headerswords passive" id="BLOG"><input type="button" value="BLOG"> </span>
-                <span class="headerswords passive" id="CONTACT"><input type="button" value="CONTACT"> </span>
-            </div>
-        </div> -->
-        <div id="header">
-        <div class="main">
-            <i style="color: white; font-size: 3vw;" class="fa-solid barimg fa-2x fa-bars fa-beat"></i>
-            <div class="sidebar openClose">
-                <div class="company" style="margin-bottom: 5vh;">
-                    <span class="companyname" style="color:rgb(0, 0, 0);">Zain</span><span style="color: lightblue;" class="companyname"> Khan-25</span>            
-                <span style="float: right; text-align: center; padding-top: 1vh;"><i style="font-size: 2.5vw;" class="fa-solid fa-2x fa-x x"></i></span>
-            </div>
-                <div class="hover">Home</div>
-                <div class="hover">About</div>
-                <div class="hover">Projects</div>
-                <div class="hover">Contact</div>
-                <div class="bottom">
-                    <i class="fa-brands hover-2 fa-facebook fa-2x"></i> 
-                    <i class="fa-brands hover-2 fa-twitter fa-2x"></i> 
-                    <i class="fa-brands hover-2 fa-linkedin fa-2x"></i> 
-                    <i class="fa-brands hover-2 fa-youtube fa-2x"></i> 
-                    <i class="fa-brands hover-2 fa-instagram fa-2x"></i> 
-                    <i class="fa-brands hover-2 fa-github fa-2x"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-        <!-- mainwork area start -->
 
-        <center>
-            <div class="workingarea" id="workingarea1">
-                <img src="./ZAINPIC.jpeg">
-                <div class="wacst dontknow">
-                    <div style="position: absolute; z-index: 4;">HELLO EVERYBODY, I AM</div>
-                    <div>MUHAMMAD ZAIN-UL-ARFEEN</div>
-                    <div>JUNIOR UI/UX DECELOPER</div>
-                    <div>Hello to everyone. My name is M.Zain-ul-arfeen. I am 14 year's old. I am currently learning web development course from saylani mass it training.</div>
-                    <div>17 July 2008</div>
-                    <div>03322433615</div>
-                    <div>zainarfeen87@gmail.com</div>
-                    <div>Karachi, Metroville.</div>
-                </div>
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border" style="opacity: 1; line-height: 70px;">ZAIN-KHAN-25  Portfolio</span>
+  </div>
+</div>
 
 
-                
-            </div>
 
-    
-            
-            <div class="workingarea none" id="workingarea2">
-                
-            </div>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">About Me</h3>
+  <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas, porta porttitor placerat leo.</p>
+</div>
 
-            <div class="workingarea none" id="workingarea3">
-                
-            </div>
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
 
-            <div class="workingarea none" id="workingarea4">
-                
-            </div>
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
 
-        </center>
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
 
-    </div>
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-type",{
-        strings: ["Muhammad Zain-ul-arfeen", "Web Developer", "Student", "Graphic Designer"],
-        typeSpeed: 130,
-        backSpeed: 100,
-        loop: true  
-        
-    })
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
 
-    </script>
-    <!-- script -->
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">COOL!</span>
+  </div>
+</div>
 
-    <!-- falto commit -->
 </body>
 </html>
