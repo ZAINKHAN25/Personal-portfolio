@@ -13,7 +13,7 @@
   
   .mySlides img{
     height: 70vh !important;
-    width: 85vw !important;
+    width: 80vw !important;
     object-fit: contain;
   }
 
@@ -25,7 +25,7 @@
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: rgb(211, 211, 211);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -46,12 +46,14 @@
   
   /* Caption text */
   .text {
-    color: #f2f2f2;
+    color: #ffffff;
+    background-color: rgba(0,0,0,30%);
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
+    margin-left: 20% !important;
     bottom: 8px;
-    width: 100%;
+    width: 50%;
     text-align: center;
   }
   
